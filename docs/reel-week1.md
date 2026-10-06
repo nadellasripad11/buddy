@@ -1,6 +1,6 @@
-# week 1 reel — 21.5 seconds
+# week 1 reel — 21.1 seconds
 
-`media/buddy-week1-silent.mp4` · 1080x1920 · no audio yet
+`media/buddy-week1-anim.mp4` · 1080x1920 · 30fps · no audio yet
 
 ## two rules this cut follows
 
@@ -19,8 +19,20 @@
 | 11–17s | "the plan" | block diagram + pin plan |
 | 17–21.5s | hero shot | "building it piece by piece" |
 
-half-second crossfades, slow push-in on every shot. the text is already baked into
-the panels, so nothing is overlaid on top.
+this is animated, not a slideshow of stills. every shot moves:
+
+- **beat 1** — the robot floats on a slow sine bob, the title rises and fades in,
+  then the subtitle lands a beat later
+- **beat 2** — the sketchbook slides in from the right on an ease-out curve, then
+  keeps drifting slowly left so the frame never sits still
+- **beat 3** — the plan panel travels upward, so the eye moves from the block
+  diagram down to the pin plan instead of reading a static image
+- **beat 4** — the robot bobs again and the two closing lines land one after the
+  other rather than together
+
+transitions are a fade, then a wipe-up into the plan (matching its upward travel),
+then a fade out to the closer. the captions are drawn and animated on top rather
+than baked into the panels.
 
 ## the voiceover
 
