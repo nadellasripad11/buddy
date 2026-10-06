@@ -1,59 +1,61 @@
-# week 1 reel — 25 seconds
+# week 1 reel — 21.5 seconds
 
-the original cut was ~45 seconds across seven beats. the limit is 25, so this is
-six beats and the voiceover is trimmed from ~95 words to 54. nothing was added —
-only cut.
+`media/buddy-week1-silent.mp4` · 1080x1920 · no audio yet
 
-![storyboard](../media/reference/reel-storyboard.webp)
+## two rules this cut follows
+
+1. **everything comes from the reference sheet.** nothing from the old breadboard
+   prototype, no diagrams made up for the video.
+2. **nothing claims hardware exists.** the pcb, kicad and laid-out-components
+   panels are left out, because none of that has happened. what's left is the four
+   planning panels, which is honestly what week 1 is.
+
+## the cut
+
+| time | panel | what's on it |
+|---|---|---|
+| 0–5.5s | concept render | the robot, "buddy — a little desk robot" |
+| 5.5–11s | notebook sketches | face ideas, move / listen / talk / personality |
+| 11–17s | "the plan" | block diagram + pin plan |
+| 17–21.5s | hero shot | "building it piece by piece" |
+
+half-second crossfades, slow push-in on every shot. the text is already baked into
+the panels, so nothing is overlaid on top.
 
 ## the voiceover
 
 > i'm building a little desk robot called buddy. eventually i want it to move
-> around, listen, talk back — actually feel like it has a personality. this week
-> i'm starting with the pcb. buddy's first real piece of hardware. i don't know
+> around, listen, talk back — actually feel like it has a personality. right now
+> i'm still figuring out the plan: what goes inside, how the parts connect. no idea
 > what the final version looks like yet. that's kind of the fun part.
 
-54 words. at a calm narration pace that lands around 22–23 seconds, which leaves a
-beat of air at the end instead of the voice running into the cut.
+55 words, lands around 21–22 seconds. where each line falls:
 
-## the timeline
+| beat | line |
+|---|---|
+| 0–5.5s | "i'm building a little desk robot called buddy." |
+| 5.5–11s | "eventually i want it to move around, listen, talk back — actually feel like it has a personality." |
+| 11–17s | "right now i'm still figuring out the plan: what goes inside, how the parts connect." |
+| 17–21.5s | "no idea what the final version looks like yet. that's kind of the fun part." |
 
-| time | on screen | text overlay | voiceover |
-|---|---|---|---|
-| 0–4s | buddy render, slow push in | `buddy` | "i'm building a little desk robot called buddy." |
-| 4–8s | hand-drawn face sketches | `a little desk robot` | "eventually i want it to move around, listen, talk back —" |
-| 8–13s | block diagram, zoom to the esp32 | — | "— actually feel like it has a personality." |
-| 13–17s | pin plan + pcb concept | `week 1: pcb` | "this week i'm starting with the pcb. buddy's first real piece of hardware." |
-| 17–21s | kicad screen recording | — | "i don't know what the final version looks like yet." |
-| 21–25s | back to the buddy render | `building it piece by piece` | "that's kind of the fun part." |
+## to add the audio
 
-## what got cut, and why
+drop the voiceover mp3 into `media/` and mux it in:
 
-- **"the idea is pretty simple"** — a line that says nothing. the next sentence
-  already shows the idea is simple.
-- **"which will connect the main electronics and basically become"** — explaining
-  what a pcb does. anyone watching a build reel knows, and the shot shows it.
-- **"i'm gonna build it piece by piece and see where it goes"** — the closing text
-  overlay already says "building it piece by piece". saying it *and* showing it
-  wastes three seconds on a repeat.
-- the separate 27–38s kicad beat and 38–45s outro got merged into the last two
-  beats. kicad gets 4 seconds, which is enough to read as "real work happening"
-  without becoming a tutorial.
+```
+ffmpeg -i media/buddy-week1-silent.mp4 -i media/voiceover.mp3 \
+  -c:v copy -c:a aac -b:a 192k -shortest media/buddy-week1.mp4
+```
 
-## shooting notes
+## known limitation
 
-- **the kicad clip is the one that proves the work.** record the screen at full
-  resolution and crop in, rather than recording a small window — a soft, upscaled
-  screen recording reads as filler.
-- keep the two renders as the **same shot** at the top and bottom, so the reel
-  closes where it opened.
-- the text overlays are lowercase on purpose. matches the project, and it stops
-  the reel feeling like an ad.
-- no music louder than the voice. the voiceover is the content.
+the source panels are small — each one is roughly 330px wide inside a 1024x1536
+sheet, so getting to 1080p means upscaling about 3x. it is noticeably soft. a
+blurred copy of each panel fills the background so nothing floats in black, which
+hides some of it, but a higher-resolution source would look better.
 
-## assets
+## what the renders are
 
-- `media/reference/reel-storyboard.webp` — the storyboard this came from
-- `media/reference/block-diagram.png` — beat 3
-- `media/reference/pin-plan.png` — beat 4
-- voiceover audio → save into `media/` once a take is picked
+concept art, not hardware. the voiceover says "no idea what the final version looks
+like yet", which keeps that honest. nothing in the reel should imply the blue robot
+is a thing that exists.

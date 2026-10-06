@@ -3,7 +3,7 @@
 a little desk robot.
 
 eventually i want it to move around, listen to me, talk back, and actually feel
-like it has a personality. right now it's a pcb and a plan.
+like it has a personality. right now it is a plan and some sketches. nothing is built.
 
 built for hack club. this repo is the real record of it, including the parts i get
 wrong.
@@ -21,12 +21,12 @@ end up like — that's kind of the point.
 
 | week | what | state |
 |---|---|---|
-| 1 | pcb — schematic and board in kicad | in progress |
-| 2 | order the board, start the firmware | not started |
-| 3 | assemble and bring it up | not started |
+| 1 | working out the plan — what goes inside, how it connects | in progress |
+| 2 | pcb schematic and board in kicad | not started |
+| 3 | order the board, start the firmware | not started |
 | later | movement, mic, speaker, personality | not started |
 
-## what's on the board
+## what should go inside
 
 | part | job | esp32 pin |
 |---|---|---|
@@ -36,7 +36,7 @@ end up like — that's kind of the point.
 | status led | "i'm awake" | 26 |
 | esp32 | the brain | — |
 
-the pin choices carry over from the breadboard prototype — see
+nothing here is built yet — it is a plan. the pin choices carry over from the breadboard prototype — see
 [buddy-mini](https://github.com/nadellasripad11/buddy-mini), where i worked out
 which esp32 pins are safe and which are off-limits.
 
@@ -54,7 +54,7 @@ buddy/
 
 ## notes
 
-- [week 1 reel](docs/reel-week1.md) — the 25 second cut, timeline and voiceover
+- [week 1 reel](docs/reel-week1.md) — the ~22 second cut, timeline and voiceover
 
 ## time
 
