@@ -1,73 +1,68 @@
-# week 1 reel — 21.1 seconds
+# week 1 reel — 22.2 seconds
 
-`media/buddy-week1-anim.mp4` · 1080x1920 · 30fps · no audio yet
+`media/buddy-week1.mp4` · 1080x1920 · 30fps · elevenlabs voiceover · burned-in captions
 
 ## two rules this cut follows
 
-1. **everything comes from the reference sheet.** nothing from the old breadboard
-   prototype, no diagrams made up for the video.
-2. **nothing claims hardware exists.** the pcb, kicad and laid-out-components
-   panels are left out, because none of that has happened. what's left is the four
-   planning panels, which is honestly what week 1 is.
+1. **everything visual comes from the reference sheet.** nothing from the old
+   breadboard prototype, no diagrams invented for the video.
+2. **nothing claims hardware exists.** the pcb, kicad and laid-out-components panels
+   are left out, because none of that has happened.
 
-## the cut
+## the shots — six, none repeated
 
-| time | panel | what's on it |
+| time | shot | motion |
 |---|---|---|
-| 0–5.5s | concept render | the robot, "buddy — a little desk robot" |
-| 5.5–11s | notebook sketches | face ideas, move / listen / talk / personality |
-| 11–17s | "the plan" | block diagram + pin plan |
-| 17–21.5s | hero shot | "building it piece by piece" |
+| 0.0–3.2s | robot, close | push in + slow bob, title drops in at the top |
+| 3.2–7.7s | the sketch page | slides in from the right on an ease-out, then drifts |
+| 7.7–10.6s | "what it should eventually do" | move / listen / talk / personality land one at a time |
+| 10.6–13.9s | the block diagram | slow push in |
+| 13.9–17.6s | the pin plan | drifts upward |
+| 17.6–22.2s | the wide hero shot | slow pull back |
 
-this is animated, not a slideshow of stills. every shot moves:
-
-- **beat 1** — the robot floats on a slow sine bob, the title rises and fades in,
-  then the subtitle lands a beat later
-- **beat 2** — the sketchbook slides in from the right on an ease-out curve, then
-  keeps drifting slowly left so the frame never sits still
-- **beat 3** — the plan panel travels upward, so the eye moves from the block
-  diagram down to the pin plan instead of reading a static image
-- **beat 4** — the robot bobs again and the two closing lines land one after the
-  other rather than together
-
-transitions are a fade, then a wipe-up into the plan (matching its upward travel),
-then a fade out to the closer. the captions are drawn and animated on top rather
-than baked into the panels.
+the robot appears in the first and last shot, but as two different source crops and
+two different framings — a tight close-up to open, the wide desk shot to close.
+nothing else repeats. shot 3 is drawn from scratch rather than being a panel.
 
 ## the voiceover
+
+elevenlabs, voice **Anagh – Introspective Narration**, 22.24s.
+`media/voiceover.mp3`.
 
 > i'm building a little desk robot called buddy. eventually i want it to move
 > around, listen, talk back — actually feel like it has a personality. right now
 > i'm still figuring out the plan: what goes inside, how the parts connect. no idea
 > what the final version looks like yet. that's kind of the fun part.
 
-55 words, lands around 21–22 seconds. where each line falls:
+## captions
 
-| beat | line |
-|---|---|
-| 0–5.5s | "i'm building a little desk robot called buddy." |
-| 5.5–11s | "eventually i want it to move around, listen, talk back — actually feel like it has a personality." |
-| 11–17s | "right now i'm still figuring out the plan: what goes inside, how the parts connect." |
-| 17–21.5s | "no idea what the final version looks like yet. that's kind of the fun part." |
-
-## to add the audio
-
-drop the voiceover mp3 into `media/` and mux it in:
+`media/captions.ass`, burned in. the cut points are not guesses — i ran
+`silencedetect` over the voiceover to find where the speech actually pauses, and
+set every caption and every shot change to those timings:
 
 ```
-ffmpeg -i media/buddy-week1-silent.mp4 -i media/voiceover.mp3 \
-  -c:v copy -c:a aac -b:a 192k -shortest media/buddy-week1.mp4
+2.30  3.24   after "called buddy."
+9.87  10.69  after "a personality."
+13.11 13.92  after "the plan:"
+16.83 17.62  after "how the parts connect."
+19.95 20.72  after "looks like yet."
 ```
 
-## known limitation
+## known limitations
 
-the source panels are small — each one is roughly 330px wide inside a 1024x1536
-sheet, so getting to 1080p means upscaling about 3x. it is noticeably soft. a
-blurred copy of each panel fills the background so nothing floats in black, which
-hides some of it, but a higher-resolution source would look better.
+**the source is low resolution.** each panel is roughly 330px wide inside a
+1024x1536 sheet, so reaching 1080p means upscaling about 3x. it is soft. a blurred
+copy of each panel fills the background so nothing floats in black, which hides
+some of it.
 
-## what the renders are
+**no ai video clips.** generating actual footage needs a paid elevenlabs plan, so
+every shot is built from the reference sheet plus motion design.
 
-concept art, not hardware. the voiceover says "no idea what the final version looks
-like yet", which keeps that honest. nothing in the reel should imply the blue robot
-is a thing that exists.
+**the pin plan on screen is the warm-up's.** it shows a plain esp32 with an oled,
+buttons and a buzzer. the real buddy is an esp32-s3 with motors, i2s audio and
+sensors — see [00-vision.md](00-vision.md). worth redrawing before the week 2 reel.
+
+## the renders are concept art
+
+not hardware. the voiceover says "no idea what the final version looks like yet",
+which keeps that honest. nothing in the reel should imply the blue robot exists.
