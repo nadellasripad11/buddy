@@ -73,3 +73,62 @@ board. the pin map gets built from scratch at step 4.
 - soldering setup, which decides whether parts are hand-solderable or need hot air
 - everything in step 2: mic, audio amp, speaker, motor driver, motors, imu,
   distance sensor, display, power, encoders, touch, connectors
+
+---
+
+## amendment — how the brain mounts
+
+*2026-10-06, after settling the assembly question*
+
+i'm starting from zero: no soldering equipment, no soldering experience. half life
+is buying the equipment. so the brain stays the same but **how it attaches to the
+board changes**.
+
+**`ESP32-S3-DevKitC-1-N16R8`, socketed into female headers** — not the bare
+wroom-1 module soldered down.
+
+the devkitc *contains* the exact wroom-1-n16r8 we picked. same chip, same 16 mb
+flash, same 8 mb psram. what's different is it comes on a breakout with pin
+headers.
+
+### why
+
+a bare wroom-1 is castellated surface-mount — it sits on pads and you solder the
+half-holes around its edge. doable, but not a reasonable *first* solder joint, and
+it's the most expensive single part on the board. getting it wrong kills both.
+
+socketed, the hardest joint on the whole board is a 2.54 mm header pin. that's what
+people learn on.
+
+it also removes three things from a first schematic: the usb connector, the
+boot/reset button circuit, and the module's power regulation. all already done on
+the devkit.
+
+### the cost of this
+
+**buddy gets bigger.** a socketed dev board sits ~15 mm above the pcb and eats more
+area than a bare module. for a desk robot that constrains the body i design later.
+it also makes the board read as a carrier rather than a finished product.
+
+**it's reversible.** the schematic works for both — a v2 that solders the module
+down is mostly a footprint swap, and by then i'll have soldering experience.
+
+### assembly rules this sets for the rest of the board
+
+- modules and breakouts on headers wherever practical
+- through-hole over surface-mount
+- nothing with a hidden thermal pad underneath
+- no package i can't inspect and rework by hand
+
+## equipment to request from half life
+
+| item | why |
+|---|---|
+| temperature-controlled soldering iron | fixed-temp irons either don't melt solder properly or cook parts |
+| 60/40 leaded solder, 0.6–0.8 mm | far more forgiving to learn on than lead-free |
+| flux pen or paste | the biggest difference between ugly joints and clean ones |
+| solder wick + desoldering pump | for undoing mistakes |
+| flush cutters | trimming header legs |
+| fine tweezers | placing small parts |
+| helping hands or small vise | need both hands free |
+| multimeter | check for shorts **before** applying power. the one people skip |
