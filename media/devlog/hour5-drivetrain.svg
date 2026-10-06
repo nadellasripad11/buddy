@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1a1208"/>
+    <stop offset="100%" stop-color="#0a0a0a"/>
+  </linearGradient>
+  <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#3a2e22"/>
+    <stop offset="100%" stop-color="#1a1410"/>
+  </linearGradient>
+  <linearGradient id="motor1" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#555"/>
+    <stop offset="30%" stop-color="#aaa"/>
+    <stop offset="70%" stop-color="#888"/>
+    <stop offset="100%" stop-color="#444"/>
+  </linearGradient>
+  <linearGradient id="gearbox" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#222"/>
+    <stop offset="50%" stop-color="#555"/>
+    <stop offset="100%" stop-color="#222"/>
+  </linearGradient>
+  <radialGradient id="wheel1" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#666"/>
+    <stop offset="80%" stop-color="#444"/>
+    <stop offset="100%" stop-color="#1a1a1a"/>
+  </radialGradient>
+  <radialGradient id="deskglow" cx="50%" cy="0%" r="60%">
+    <stop offset="0%" stop-color="rgba(56,139,253,0.18)"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </radialGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg)"/>
+<!-- desk surface -->
+<rect x="0" y="680" width="1920" height="400" fill="url(#desk)"/>
+<line x1="0" y1="680" x2="1920" y2="680" stroke="#5a4a38" stroke-width="3"/>
+<rect x="0" y="680" width="1920" height="400" fill="url(#deskglow)"/>
+
+<!-- subtle noise -->
+<filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feBlend in="SourceGraphic" mode="overlay" result="noisy"/><feComposite in="noisy" in2="SourceGraphic" operator="in"/></filter>
+
+<!-- ====== LEFT WHEEL ====== -->
+<!-- shadow -->
+<ellipse cx="300" cy="698" rx="100" ry="18" fill="rgba(0,0,0,0.5)"/>
+<!-- tire outer (rubber) -->
+<circle cx="300" cy="610" r="110" fill="#1a1a1a"/>
+<!-- tire tread -->
+<circle cx="300" cy="610" r="110" fill="none" stroke="#282828" stroke-width="20"/>
+<circle cx="300" cy="610" r="100" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="12,6"/>
+<!-- hub -->
+<circle cx="300" cy="610" r="80" fill="url(#wheel1)"/>
+<!-- spokes -->
+<line x1="300" y1="542" x2="300" y2="518" stroke="#555" stroke-width="5"/>
+<line x1="368" y1="578" x2="391" y2="565" stroke="#555" stroke-width="5"/>
+<line x1="368" y1="642" x2="391" y2="656" stroke="#555" stroke-width="5"/>
+<line x1="300" y1="678" x2="300" y2="702" stroke="#555" stroke-width="5"/>
+<line x1="232" y1="642" x2="209" y2="656" stroke="#555" stroke-width="5"/>
+<line x1="232" y1="578" x2="209" y2="565" stroke="#555" stroke-width="5"/>
+<!-- center bore -->
+<circle cx="300" cy="610" r="18" fill="#111"/>
+<circle cx="300" cy="610" r="12" fill="#222"/>
+<!-- D flat -->
+<rect x="288" y="598" width="12" height="24" fill="#111"/>
+<!-- label -->
+<text x="300" y="760" fill="#7a6a4a" font-family="Courier New" font-size="20" text-anchor="middle">42mm rubber wheel</text>
+<text x="300" y="785" fill="#5a4a38" font-family="Courier New" font-size="16" text-anchor="middle">3mm D-bore · N20 shaft fit</text>
+
+<!-- ====== LEFT MOTOR ====== -->
+<!-- shadow -->
+<ellipse cx="620" cy="700" rx="90" ry="12" fill="rgba(0,0,0,0.4)"/>
+<!-- motor body -->
+<rect x="500" y="570" width="180" height="90" rx="10" fill="url(#motor1)"/>
+<!-- gearbox end -->
+<rect x="660" y="579" width="70" height="72" rx="5" fill="url(#gearbox)"/>
+<!-- shaft -->
+<rect x="730" y="600" width="55" height="15" rx="4" fill="#ccc"/>
+<rect x="730" y="603" width="55" height="4" fill="#aaa"/>
+<!-- wire leads -->
+<line x1="500" y1="593" x2="440" y2="593" stroke="#e04040" stroke-width="5" stroke-linecap="round"/>
+<line x1="500" y1="613" x2="440" y2="613" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+<line x1="500" y1="632" x2="440" y2="632" stroke="#e04040" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+<!-- detail lines on body -->
+<line x1="520" y1="570" x2="520" y2="660" stroke="rgba(0,0,0,0.3)" stroke-width="1"/>
+<line x1="560" y1="570" x2="560" y2="660" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+<line x1="600" y1="570" x2="600" y2="660" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+<line x1="640" y1="570" x2="640" y2="660" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+<!-- motor label -->
+<text x="580" y="760" fill="#aaa" font-family="Courier New" font-size="20" font-weight="bold" text-anchor="middle">GA12-N20</text>
+<text x="580" y="785" fill="#7a7a7a" font-family="Courier New" font-size="16" text-anchor="middle">6V · 200RPM · 3mm D-shaft</text>
+
+<!-- ====== DRV8833 BREAKOUT BOARD CENTER ====== -->
+<!-- board shadow -->
+<ellipse cx="960" cy="706" rx="120" ry="14" fill="rgba(0,0,0,0.4)"/>
+<!-- PCB -->
+<rect x="840" y="560" width="240" height="145" rx="8" fill="#1a3a1a"/>
+<rect x="840" y="560" width="240" height="145" rx="8" fill="none" stroke="#2d6a2d" stroke-width="2"/>
+<!-- PCB silkscreen traces -->
+<line x1="870" y1="585" x2="870" y2="690" stroke="#1f4a1f" stroke-width="1.5"/>
+<line x1="1060" y1="585" x2="1060" y2="690" stroke="#1f4a1f" stroke-width="1.5"/>
+<line x1="870" y1="640" x2="1060" y2="640" stroke="#1f4a1f" stroke-width="1.5"/>
+<!-- chip -->
+<rect x="900" y="595" width="120" height="75" rx="4" fill="#111"/>
+<rect x="900" y="595" width="120" height="75" rx="4" fill="none" stroke="#333" stroke-width="1"/>
+<!-- chip label -->
+<text x="960" y="628" fill="#a8ff20" font-family="Courier New" font-size="18" font-weight="bold" text-anchor="middle">DRV8833</text>
+<text x="960" y="650" fill="#668833" font-family="Courier New" font-size="13" text-anchor="middle">dual H-bridge</text>
+<text x="960" y="665" fill="#668833" font-family="Courier New" font-size="11" text-anchor="middle">1.5A / channel</text>
+<!-- header pins -->
+<rect x="848" y="697" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="876" y="697" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="904" y="697" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="932" y="697" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="960" y="697" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="988" y="697" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="1016" y="697" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="1044" y="697" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="848" y="548" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="876" y="548" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="904" y="548" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="932" y="548" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="960" y="548" width="16" height="18" fill="#c8a000" rx="2"/>
+<rect x="988" y="548" width="16" height="18" fill="#c8a000" rx="2"/>
+<text x="960" y="780" fill="#4a8a4a" font-family="Courier New" font-size="20" font-weight="bold" text-anchor="middle">Adafruit 3297</text>
+<text x="960" y="803" fill="#3a6a3a" font-family="Courier New" font-size="15" text-anchor="middle">GPIO 15,16,17,18 → AIN/BIN PWM</text>
+
+<!-- ====== RIGHT MOTOR ====== -->
+<!-- mirror of left -->
+<ellipse cx="1300" cy="700" rx="90" ry="12" fill="rgba(0,0,0,0.4)"/>
+<rect x="1240" y="570" width="180" height="90" rx="10" fill="url(#motor1)"/>
+<rect x="1240" y="579" width="70" height="72" rx="5" fill="url(#gearbox)"/>
+<rect x="1135" y="600" width="55" height="15" rx="4" fill="#ccc"/>
+<line x1="1420" y1="593" x2="1480" y2="593" stroke="#e04040" stroke-width="5" stroke-linecap="round"/>
+<line x1="1420" y1="613" x2="1480" y2="613" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+<text x="1340" y="760" fill="#aaa" font-family="Courier New" font-size="20" font-weight="bold" text-anchor="middle">GA12-N20</text>
+<text x="1340" y="785" fill="#7a7a7a" font-family="Courier New" font-size="16" text-anchor="middle">×2 motors total</text>
+
+<!-- ====== RIGHT WHEEL ====== -->
+<ellipse cx="1620" cy="698" rx="100" ry="18" fill="rgba(0,0,0,0.5)"/>
+<circle cx="1620" cy="610" r="110" fill="#1a1a1a"/>
+<circle cx="1620" cy="610" r="110" fill="none" stroke="#282828" stroke-width="20"/>
+<circle cx="1620" cy="610" r="100" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="12,6"/>
+<circle cx="1620" cy="610" r="80" fill="url(#wheel1)"/>
+<line x1="1620" y1="542" x2="1620" y2="518" stroke="#555" stroke-width="5"/>
+<line x1="1688" y1="578" x2="1711" y2="565" stroke="#555" stroke-width="5"/>
+<line x1="1688" y1="642" x2="1711" y2="656" stroke="#555" stroke-width="5"/>
+<line x1="1620" y1="678" x2="1620" y2="702" stroke="#555" stroke-width="5"/>
+<line x1="1552" y1="642" x2="1529" y2="656" stroke="#555" stroke-width="5"/>
+<line x1="1552" y1="578" x2="1529" y2="565" stroke="#555" stroke-width="5"/>
+<circle cx="1620" cy="610" r="18" fill="#111"/>
+<circle cx="1620" cy="610" r="12" fill="#222"/>
+<rect x="1608" y="598" width="12" height="24" fill="#111"/>
+<text x="1620" y="760" fill="#7a6a4a" font-family="Courier New" font-size="20" text-anchor="middle">42mm rubber wheel</text>
+
+<!-- connection shaft wheel to motor -->
+<line x1="785" y1="607" x2="730" y2="607" stroke="#888" stroke-width="8" stroke-linecap="round"/>
+<line x1="1190" y1="607" x2="1135" y2="607" stroke="#888" stroke-width="8" stroke-linecap="round"/>
+
+<!-- callout lines -->
+<line x1="300" y1="500" x2="200" y2="380" stroke="rgba(200,200,200,0.3)" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="190" y="368" fill="#e6edf3" font-family="Courier New" font-size="18" font-weight="bold" text-anchor="end">rubber wheel</text>
+<text x="190" y="390" fill="#8b949e" font-family="Courier New" font-size="14" text-anchor="end">42mm × 9mm</text>
+
+<line x1="580" y1="570" x2="520" y2="420" stroke="rgba(200,200,200,0.3)" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="510" y="408" fill="#e6edf3" font-family="Courier New" font-size="18" font-weight="bold" text-anchor="end">N20 gearmotor</text>
+<text x="510" y="430" fill="#8b949e" font-family="Courier New" font-size="14" text-anchor="end">metal gearbox · ~400mA stall</text>
+
+<line x1="960" y1="560" x2="960" y2="420" stroke="rgba(200,200,200,0.3)" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="960" y="408" fill="#e6edf3" font-family="Courier New" font-size="18" font-weight="bold" text-anchor="middle">DRV8833 breakout</text>
+<text x="960" y="430" fill="#8b949e" font-family="Courier New" font-size="14" text-anchor="middle">1.5A / channel · Adafruit $5.95</text>
+
+<!-- title -->
+<text x="60" y="60" fill="#e6edf3" font-family="Courier New" font-size="38" font-weight="bold">buddy — drive train</text>
+<text x="60" y="92" fill="#8b949e" font-family="Courier New" font-size="20">N20 motors · rubber wheels · DRV8833 driver</text>
+
+<!-- hour badge -->
+<rect x="1760" y="1020" width="140" height="50" rx="6" fill="rgba(247,129,102,0.15)" stroke="#f78166" stroke-width="1"/>
+<text x="1830" y="1043" fill="#f78166" font-family="Courier New" font-size="22" font-weight="bold" text-anchor="middle">hour 5</text>
+<text x="1830" y="1060" fill="#8b949e" font-family="Courier New" font-size="13" text-anchor="middle">drive train</text>
+</svg>

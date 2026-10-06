@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1c1a2e"/>
+    <stop offset="50%" stop-color="#2a1f1a"/>
+    <stop offset="100%" stop-color="#0f0d0a"/>
+  </linearGradient>
+  <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#3a2e22"/>
+    <stop offset="100%" stop-color="#1a1410"/>
+  </linearGradient>
+  <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#5a9cf8"/>
+    <stop offset="40%" stop-color="#2666c0"/>
+    <stop offset="80%" stop-color="#1a4a9a"/>
+    <stop offset="100%" stop-color="#0f2f6a"/>
+  </linearGradient>
+  <radialGradient id="windowlight" cx="0%" cy="30%" r="60%">
+    <stop offset="0%" stop-color="rgba(255,220,140,0.12)"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </radialGradient>
+  <radialGradient id="screenglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="rgba(56,200,255,0.4)"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </radialGradient>
+  <radialGradient id="deskglow" cx="50%" cy="0%" r="70%">
+    <stop offset="0%" stop-color="rgba(56,139,253,0.22)"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </radialGradient>
+  <radialGradient id="eyeglow1" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="rgba(56,220,255,0.8)"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </radialGradient>
+  <filter id="glow4"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glow12"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="softblur"><feGaussianBlur stdDeviation="20"/></filter>
+</defs>
+
+<!-- background -->
+<rect width="1920" height="1080" fill="url(#bg)"/>
+<rect width="1920" height="1080" fill="url(#windowlight)"/>
+<!-- desk -->
+<rect x="0" y="680" width="1920" height="400" fill="url(#desk)"/>
+<line x1="0" y1="680" x2="1920" y2="680" stroke="#5a4a38" stroke-width="3"/>
+<rect x="0" y="680" width="1920" height="400" fill="url(#deskglow)"/>
+
+<!-- laptop screen glow (right) -->
+<rect x="1320" y="160" width="520" height="640" rx="12" fill="rgba(30,50,80,0.4)"/>
+<rect x="1320" y="160" width="520" height="640" rx="12" fill="none" stroke="rgba(56,100,180,0.2)" stroke-width="1"/>
+<!-- laptop glow on desk -->
+<ellipse cx="1580" cy="700" r="300" fill="rgba(56,139,253,0.05)" filter="url(#softblur)"/>
+<!-- laptop code -->
+<text x="1345" y="240" fill="rgba(56,139,253,0.5)" font-family="Courier New" font-size="16">// buddy pin map</text>
+<text x="1345" y="270" fill="rgba(86,211,100,0.4)" font-family="Courier New" font-size="16">gpio12 = SPI_SCK</text>
+<text x="1345" y="300" fill="rgba(86,211,100,0.4)" font-family="Courier New" font-size="16">gpio4  = I2S_BCLK</text>
+<text x="1345" y="330" fill="rgba(86,211,100,0.4)" font-family="Courier New" font-size="16">gpio7  = I2C_SCL</text>
+<text x="1345" y="360" fill="rgba(56,139,253,0.35)" font-family="Courier New" font-size="16">// 21 GPIOs assigned</text>
+<text x="1345" y="390" fill="rgba(56,211,100,0.45)" font-family="Courier New" font-size="16">// step 4 done ✓</text>
+
+<!-- coffee mug (right desk) -->
+<rect x="1670" y="620" width="80" height="95" rx="6" fill="#4a3828"/>
+<rect x="1670" y="620" width="80" height="95" rx="6" fill="none" stroke="#5a4030" stroke-width="2"/>
+<!-- mug handle -->
+<path d="M1750,650 Q1790,660 1790,690 Q1790,720 1750,700" fill="none" stroke="#5a4030" stroke-width="8" stroke-linecap="round"/>
+<!-- steam -->
+<path d="M1695,620 Q1700,595 1695,570" fill="none" stroke="rgba(200,180,150,0.25)" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M1715,620 Q1720,590 1715,560" fill="none" stroke="rgba(200,180,150,0.2)" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M1735,620 Q1740,597 1735,575" fill="none" stroke="rgba(200,180,150,0.22)" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- ===== BUDDY ROBOT ===== -->
+<!-- ambient glow under robot -->
+<ellipse cx="750" cy="720" rx="220" ry="50" fill="rgba(56,139,253,0.18)" filter="url(#softblur)"/>
+
+<!-- wheels -->
+<!-- left wheel shadow -->
+<ellipse cx="640" cy="718" rx="36" ry="10" fill="rgba(0,0,0,0.5)"/>
+<!-- left wheel -->
+<circle cx="640" cy="688" r="38" fill="#1a1a1a"/>
+<circle cx="640" cy="688" r="30" fill="#3a3a3a"/>
+<circle cx="640" cy="688" r="22" fill="#2a2a2a"/>
+<!-- right wheel shadow -->
+<ellipse cx="870" cy="718" rx="36" ry="10" fill="rgba(0,0,0,0.5)"/>
+<!-- right wheel -->
+<circle cx="870" cy="688" r="38" fill="#1a1a1a"/>
+<circle cx="870" cy="688" r="30" fill="#3a3a3a"/>
+<circle cx="870" cy="688" r="22" fill="#2a2a2a"/>
+
+<!-- body shadow -->
+<ellipse cx="755" cy="716" rx="175" ry="22" fill="rgba(0,0,0,0.45)"/>
+
+<!-- body -->
+<rect x="617" y="400" width="276" height="316" rx="40" fill="url(#body)"/>
+<!-- body edge highlight -->
+<rect x="617" y="400" width="276" height="316" rx="40" fill="none" stroke="rgba(120,180,255,0.4)" stroke-width="2"/>
+<!-- body inner shadow top -->
+<rect x="617" y="400" width="276" height="60" rx="40" fill="rgba(0,0,0,0.15)"/>
+
+<!-- screw corners -->
+<circle cx="645" cy="428" r="7" fill="rgba(0,0,0,0.35)"/>
+<circle cx="865" cy="428" r="7" fill="rgba(0,0,0,0.35)"/>
+<circle cx="645" cy="688" r="7" fill="rgba(0,0,0,0.35)"/>
+<circle cx="865" cy="688" r="7" fill="rgba(0,0,0,0.35)"/>
+
+<!-- face bezel -->
+<rect x="638" y="418" width="234" height="178" rx="20" fill="#080e1a"/>
+<rect x="638" y="418" width="234" height="178" rx="20" fill="none" stroke="#1a2a3a" stroke-width="1"/>
+
+<!-- screen glow -->
+<rect x="650" y="428" width="210" height="158" rx="12" fill="url(#screenglow)" opacity="0.3"/>
+
+<!-- screen -->
+<rect x="650" y="428" width="210" height="158" rx="12" fill="#0a1420"/>
+
+<!-- eye glow areas -->
+<ellipse cx="716" cy="490" rx="35" ry="35" fill="rgba(56,220,255,0.15)" filter="url(#softblur)"/>
+<ellipse cx="794" cy="490" rx="35" ry="35" fill="rgba(56,220,255,0.15)" filter="url(#softblur)"/>
+
+<!-- eyes -->
+<ellipse cx="716" cy="490" rx="26" ry="30" fill="#38dcff" filter="url(#glow4)"/>
+<ellipse cx="794" cy="490" rx="26" ry="30" fill="#38dcff" filter="url(#glow4)"/>
+
+<!-- eye pupils (dark center) -->
+<ellipse cx="716" cy="490" rx="16" ry="20" fill="#082030"/>
+<ellipse cx="794" cy="490" rx="16" ry="20" fill="#082030"/>
+
+<!-- eye rim light -->
+<ellipse cx="716" cy="490" rx="26" ry="30" fill="none" stroke="rgba(56,220,255,0.6)" stroke-width="2"/>
+<ellipse cx="794" cy="490" rx="26" ry="30" fill="none" stroke="rgba(56,220,255,0.6)" stroke-width="2"/>
+
+<!-- eye shine -->
+<ellipse cx="708" cy="480" rx="7" ry="9" fill="rgba(255,255,255,0.55)"/>
+<ellipse cx="786" cy="480" rx="7" ry="9" fill="rgba(255,255,255,0.55)"/>
+
+<!-- smile -->
+<path d="M 695 546 Q 755 578 815 546" fill="none" stroke="#38dcff" stroke-width="4" stroke-linecap="round" filter="url(#glow4)"/>
+
+<!-- RGB LED dot -->
+<circle cx="870" cy="565" r="9" fill="#56d364" filter="url(#glow4)"/>
+
+<!-- USB port at bottom -->
+<rect x="733" y="700" width="44" height="14" rx="3" fill="#1a3060"/>
+
+<!-- bottom edge of body connecting wheels -->
+<rect x="626" y="695" width="258" height="20" rx="5" fill="rgba(10,30,80,0.5)"/>
+
+<!-- body stripe detail -->
+<rect x="617" y="530" width="276" height="3" fill="rgba(120,180,255,0.15)" rx="1"/>
+<rect x="617" y="600" width="276" height="3" fill="rgba(120,180,255,0.1)" rx="1"/>
+
+<!-- ===== PLANTS background bokeh ===== -->
+<circle cx="200" cy="400" r="140" fill="rgba(20,80,20,0.12)" filter="url(#softblur)"/>
+<circle cx="1800" cy="350" r="160" fill="rgba(20,60,30,0.1)" filter="url(#softblur)"/>
+
+<!-- ===== OVERLAY TEXT ===== -->
+<!-- dark pill -->
+<rect x="50" y="940" width="680" height="110" rx="14" fill="rgba(0,0,0,0.55)"/>
+<text x="80" y="988" fill="#e6edf3" font-family="'Segoe UI', sans-serif" font-size="52" font-weight="bold">buddy</text>
+<text x="80" y="1032" fill="#8b949e" font-family="'Segoe UI', sans-serif" font-size="22">a little desk robot  ·  the plan is coming together</text>
+
+<!-- hour badge -->
+<rect x="1760" y="1020" width="140" height="50" rx="6" fill="rgba(88,166,255,0.15)" stroke="#58a6ff" stroke-width="1"/>
+<text x="1830" y="1043" fill="#58a6ff" font-family="Courier New" font-size="22" font-weight="bold" text-anchor="middle">hour 6</text>
+<text x="1830" y="1060" fill="#8b949e" font-family="Courier New" font-size="13" text-anchor="middle">the vision</text>
+</svg>
