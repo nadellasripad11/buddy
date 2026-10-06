@@ -1,0 +1,14 @@
+# kicad
+*-backups/
+*.kicad_prl
+fp-info-cache
+~*
+*.bak
+
+# os
+Thumbs.db
+.DS_Store
+
+# build
+build/
+.pio/
