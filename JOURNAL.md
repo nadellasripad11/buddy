@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 3 | 14h | 3 |
+| Week 1 | Tier 3 | 15h | 3 |
 
 ## Contents
 
@@ -74,7 +74,7 @@ board fully zoned at 80×70mm. fits the JLCPCB $2 tier with room to spare. next 
 
 ### 2026-10-08 – placed every component on the 80×70mm board today. started with the power zone — USB terminal into the fuse into the rocker switch, straight line top-left. high current, short path, easy to probe.
 
-**5h**
+**6h**
 
 placed every component on the 80×70mm board today. started with the power zone — USB terminal into the fuse into the rocker switch, straight line top-left. high current, short path, easy to probe.
 
@@ -95,3 +95,5 @@ board fully zoned. 80×70mm, fits the JLCPCB $2 tier. total BOM landed at $73.16
 ![photo4_pcb_3d_preview](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/21fa9386214834e6afdc5d5870c1eb9135cf0f7e61586802281c359504267bb7.png)
 
 ![step10_pcb_routing](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/d572c73c2572d5420a29578d3b8ae1435663195b9871d8aa2332056e79da3053.png)
+
+![step11_drc_checklist](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/2869501f6db10b73b5026033d02ba20293a1cd32980c2043f0aec6100f1d1991.png)
