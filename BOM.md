@@ -21,7 +21,7 @@
 | [Rocker Switch 5-pack](https://www.amazon.com/dp/B07GNHMY3B) | main power on/off switch | 1 | $4.99 | $4.99 | [https://www.amazon.com/dp/B07GNHMY3B](https://www.amazon.com/dp/B07GNHMY3B) |
 | [PTC Fuse 2A](https://www.digikey.com/en/products/detail/littelfuse-inc/LVR200K-240/6348192) | resettable overcurrent protection on power input | 1 | $2.45 | $2.45 | [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/LVR200K-240/6348192) |
 | **Parts subtotal** | — | — | — | **$58.78** | — |
-| **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$58.78** | — |
+| **Tax & shipping** | — | — | — | **$8.00** | — |
+| **Total** | — | — | — | **$66.78** | — |
 
-$6.22 left of the tier's funding.
+**$1.78 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
