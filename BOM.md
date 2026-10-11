@@ -12,7 +12,6 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| ESP32-S3-DevKitC-1-N16R8 | — | 1 | $0.00 | $0.00 | https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-DEVKITC-1- |
 | MAX98357A I2S Amp | — | 1 | $0.00 | $0.00 | https://www.aliexpress.com/w/wholesale-MAX98357A-amplifier-module.html |
 | VL53L0X ToF Sensor | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=VL53L0X+breakout+sensor |
 | TFT LCD 1.69in ST7789 SPI | — | 1 | $0.00 | $0.00 | https://www.aliexpress.com/w/wholesale-ST7789-1.69-SPI-display-module.html |
