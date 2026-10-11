@@ -1,9 +1,9 @@
 Part,Designators,Qty,Value / Part #,Footprint,Source
 ESP32-S3-DevKitC-1-N16R8,U1,1,,CONN-TH_2X22PIN,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-DEVKITC-1-N16R8/15971100
-MAX98357A I2S Amp,J1,1,Adafruit 3006,HDR-M-2.54_1X7,https://www.adafruit.com/product/3006
+MAX98357A I2S Amp,J1,1,Generic MAX98357A module,HDR-M-2.54_1X7,https://www.aliexpress.com/w/wholesale-MAX98357A-amplifier-module.html
 VL53L0X ToF Sensor,J2,1,HiLetgo B07XXTMRR2,HDR-M-2.54_1X4,https://www.amazon.com/s?k=VL53L0X+breakout+sensor
-TFT LCD 2.0in SPI,J3,1,SparkFun LCD-27501,HDR-M-2.54_1X8,https://www.sparkfun.com/products/27501
-DRV8833 Motor Driver,J4,1,Adafruit 3297,HDR-M-2.54_2X10,https://www.adafruit.com/product/3297
+TFT LCD 1.69in ST7789 SPI,J3,1,Generic ST7789 1.69in module,HDR-M-2.54_1X8,https://www.aliexpress.com/w/wholesale-ST7789-1.69-SPI-display-module.html
+DRV8833 Motor Driver,J4,1,Generic DRV8833 module,HDR-M-2.54_2X10,https://www.aliexpress.com/w/wholesale-DRV8833-motor-driver-module.html
 Expansion Header,J5,1,,HDR-M-2.54_1X8,https://www.amazon.com/s?k=2.54mm+breakaway+header
 Screw Terminal 5.08mm,J6,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal
 Screw Terminal 5.08mm,J7,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal
