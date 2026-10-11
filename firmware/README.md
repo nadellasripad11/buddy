@@ -1,1 +1,32 @@
-IyBmaXJtd2FyZQoKQXJkdWlubyBmaXJtd2FyZSBmb3IgdGhlIEVTUDMyLVMzLURldktpdEMtMS1OMTZSOC4KCiMjIGJ1ZGR5LmlubwoKQnJpbmctdXAgZmlybXdhcmUgdXNpbmcgdGhlIHZlcmlmaWVkIHBpbiBtYXAgZnJvbSBgZG9jcy93ZWVrMS8wNC1waW4tbWFwLm1kYDoKCi0gKipEaXNwbGF5Kio6IFNUNzc4OSAyNDB4MzIwIFNQSSAoR1BJTzktMTQpCi0gKipBdWRpbyoqOiBNQVg5ODM1N0EgSTJTIGFtcCAoR1BJTzQtNikKLSAqKlRvRioqOiBWTDUzTDBYIGRpc3RhbmNlIHNlbnNvciAoR1BJTzctOCBJMkMpCi0gKipNb3RvcnMqKjogRFJWODgzMyBkdWFsIEgtYnJpZGdlIChHUElPMTUtMTggUFdNKQotICoqQnV0dG9ucyoqOiAzeCB0YWN0aWxlLCBhY3RpdmUtbG93IChHUElPMS8yLzIxKQotICoqUkdCIExFRCoqOiBjb21tb24tY2F0aG9kZSAoR1BJTzM4LzQ3LzQ4KQoKQnV0dG9uIDEgPSBmb3J3YXJkLCBCdXR0b24gMiA9IHJldmVyc2UsIEJ1dHRvbiAzID0gc3RvcC4KUkdCIHNob3dzIHN0YXR1czogcmVkID0gYm9vdGluZywgZ3JlZW4gPSByZWFkeS9pZGxlLgoKIyMgcmVxdWlyZWQgbGlicmFyaWVzCgpJbnN0YWxsIHZpYSBBcmR1aW5vIExpYnJhcnkgTWFuYWdlcjoKCi0gQWRhZnJ1aXQgR0ZYIExpYnJhcnkKLSBBZGFmcnVpdCBTVDc3ODkgTGlicmFyeQotIFZMNTNMMFggYnkgUG9sb2x1CgojIyBib2FyZCBzZXR1cAoKLSBCb2FyZDogIkVTUDMyUzMgRGV2IE1vZHVsZSIKLSBVU0IgQ0RDIE9uIEJvb3Q6IEVuYWJsZWQgKGZvciBTZXJpYWwgTW9uaXRvcikKLSBGbGFzaCBTaXplOiAxNk1CCi0gUFNSQU06IE9QSSBQU1JBTQo=
+# firmware
+
+Arduino firmware for the ESP32-S3-DevKitC-1-N16R8.
+
+## buddy.ino
+
+Bring-up firmware using the verified pin map from `docs/week1/04-pin-map.md`:
+
+- **Display**: ST7789 240x320 SPI (GPIO9-14)
+- **Audio**: MAX98357A I2S amp (GPIO4-6)
+- **ToF**: VL53L0X distance sensor (GPIO7-8 I2C)
+- **Motors**: DRV8833 dual H-bridge (GPIO15-18 PWM)
+- **Buttons**: 3x tactile, active-low (GPIO1/2/21)
+- **RGB LED**: common-cathode (GPIO38/47/48)
+
+Button 1 = forward, Button 2 = reverse, Button 3 = stop.
+RGB shows status: red = booting, green = ready/idle.
+
+## required libraries
+
+Install via Arduino Library Manager:
+
+- Adafruit GFX Library
+- Adafruit ST7789 Library
+- VL53L0X by Pololu
+
+## board setup
+
+- Board: "ESP32S3 Dev Module"
+- USB CDC On Boot: Enabled (for Serial Monitor)
+- Flash Size: 16MB
+- PSRAM: OPI PSRAM
