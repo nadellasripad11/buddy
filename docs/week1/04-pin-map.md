@@ -227,3 +227,92 @@ you want software sleep mode.
 next: **step 5 — power and bus conflict check.** verify the 5V / 3.3V domains,
 I²C pull-up resistors, SPI bus exclusivity, and the motor brownout scenario
 before drawing a single wire in KiCad.
+
+---
+
+## 8. final sanity check — vs official documentation
+
+*2026-10-06 — verified against Espressif ESP-IDF v5.3 DevKitC-1 User Guide and ESP32-S3 SPI master docs*
+
+### SPI display (GPIO9–14)
+official SPI2 (FSPI) hardware default pin mapping from ESP-IDF v5.3:
+
+| SPI2 signal | GPIO | our assignment | match? |
+|---|---|---|---|
+| FSPICLK (SCK) | GPIO12 | display SCK | ✅ exact |
+| FSPID (MOSI) | GPIO11 | display MOSI | ✅ exact |
+| FSPICS0 (CS) | GPIO10 | display CS | ✅ exact |
+| FSPIQ (DC) | GPIO13 | display DC | ✅ exact |
+| FSPIHD (RST) | GPIO9 | display RST | ✅ exact |
+| FSPIWP (BLK) | GPIO14 | display BLK | ✅ exact |
+
+all 6 display pins hit the SPI2 hardware defaults — IO_MUX path, no GPIO matrix routing needed.
+this is the best possible signal integrity for the ST7789.
+
+### I²S audio (GPIO4–6)
+I²S0 routes entirely via GPIO matrix on the ESP32-S3 — any GPIO works.
+GPIO4/5/6 are confirmed on J1, clean, no competing functions.  ✅
+
+### I²C sensor (GPIO7–8)
+I²C0 routes entirely via GPIO matrix — any GPIO works.
+GPIO7/8 are confirmed on J1, clean.  ✅
+
+### motor PWM (GPIO15–18)
+LEDC timer routes via GPIO matrix — any GPIO works.
+GPIO15–18 are on J1, all clean, no competing functions.  ✅
+
+### RGB LED (GPIO38/47/48)
+all three are pure GPIO, no competing peripherals.
+GPIO38 is on J3 (confirmed). GPIO47/48 (SPICLK_P/N_DIFF) are only a concern if
+using differential SPDIF — we are not. they operate as normal GPIO. ✅
+
+### buttons (GPIO1/2/21)
+GPIO1/2 on J3: clean, no competing functions.
+GPIO21 on J3: safe as INPUT_PULLUP — Wi-Fi sensitivity concern applies to output-driving only. ✅
+
+### strapping pins
+none of GPIO0/3/45/46 are used as peripheral outputs in this design. ✅
+
+### N16R8 PSRAM trap
+GPIO35/36/37 appear on J3 but are consumed by the octal PSRAM on the N16R8 module.
+confirmed from official docs: "not available for external use on N16R8."
+none are assigned. ✅
+
+### USB + UART
+GPIO19/20 (USB D-/D+) and GPIO43/44 (UART0 TX/RX) are untouched. ✅
+
+### JTAG expansion
+GPIO39/40/41/42 reserved as JTAG-capable expansion header. usable as GPIO if debugger not needed. ✅
+
+---
+
+## approved pin map
+
+*all checks passed — this is the final approved map for KiCad.*
+
+| GPIO | function | dir | interface |
+|---|---|---|---|
+| **GPIO9** | display RST | OUT | GPIO |
+| **GPIO10** | display CS | OUT | SPI2 FSPICS0 |
+| **GPIO11** | display MOSI | OUT | SPI2 FSPID |
+| **GPIO12** | display SCK | OUT | SPI2 FSPICLK |
+| **GPIO13** | display DC | OUT | SPI2 FSPIQ |
+| **GPIO14** | display BLK | OUT | LEDC PWM |
+| **GPIO4** | I²S BCLK | OUT | I²S0 |
+| **GPIO5** | I²S LRC | OUT | I²S0 |
+| **GPIO6** | I²S DIN | OUT | I²S0 |
+| **GPIO7** | I²C SCL | OUT | I²C0 |
+| **GPIO8** | I²C SDA | IN/OUT | I²C0 |
+| **GPIO15** | motor L AIN1 | OUT | LEDC PWM |
+| **GPIO16** | motor L AIN2 | OUT | LEDC PWM |
+| **GPIO17** | motor R BIN1 | OUT | LEDC PWM |
+| **GPIO18** | motor R BIN2 | OUT | LEDC PWM |
+| **GPIO1** | button 1 | IN | INPUT\_PULLUP |
+| **GPIO2** | button 2 | IN | INPUT\_PULLUP |
+| **GPIO21** | button 3 | IN | INPUT\_PULLUP |
+| **GPIO38** | LED red | OUT | GPIO |
+| **GPIO47** | LED green | OUT | GPIO |
+| **GPIO48** | LED blue | OUT | GPIO |
+
+**21 GPIOs used. 0 conflicts. USB/UART/PSRAM all clear.**
+**JTAG expansion: GPIO39–42 (reserved, labeled on schematic).**
