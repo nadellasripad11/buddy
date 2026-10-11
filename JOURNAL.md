@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 2 | 24h | 5 |
+| Week 1 | Tier 2 | 23h | 5 |
 
 ## Contents
 
@@ -18,7 +18,7 @@
 2. [2026-10-08 – figured out what lives on the PCB vs what plugs in. everything swappable: DevKitC on two female header sockets, all four breakout modules on male headers, motors and speaker on screw terminals. 11 con](#2026-10-08-figured-out-what-lives-on-the-pcb-vs-what-plugs-i)
 3. [2026-10-08 – placed every component on the 80×70mm board today. started with the power zone — USB terminal into the fuse into the rocker switch, straight line top-left. high current, short path, easy to probe.](#2026-10-08-placed-every-component-on-the-8070mm-board-today-)
 4. [2026-10-11 – rebuilt the schematic from scratch around the 44-pin esp32-s3 — 33 components, 39 nets, every module on its own header.](#2026-10-11-rebuilt-the-schematic-from-scratch-around-the-44-)
-5. [2026-10-11 – # Final BOM and submission prep](#2026-10-11-final-bom-and-submission-prep)
+5. [2026-10-11 – ![393e2b7b5c998e25c4c582e49a2dc385b315805055c31da5e517ab924dc6d12c](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/393e2b7b5c998e25c4c582e49a2dc385b3](#2026-10-11-393e2b7b5c998e25c4c582e49a2dc385b315805055c31da5e)
 
 ## Design
 
@@ -130,16 +130,14 @@ board's placed but unrouted — manual routing next, then drc.
 
 ![hour 9 1](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/9a62aeca963b8f6a9046157259c8f68b0387c34636bcc63e29900b99f2a7870c.png)
 
-### 2026-10-11 – # Final BOM and submission prep
+### 2026-10-11 – ![393e2b7b5c998e25c4c582e49a2dc385b315805055c31da5e517ab924dc6d12c](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/393e2b7b5c998e25c4c582e49a2dc385b3
 
-**3h**
+**2h**
+
+![393e2b7b5c998e25c4c582e49a2dc385b315805055c31da5e517ab924dc6d12c](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/393e2b7b5c998e25c4c582e49a2dc385b315805055c31da5e517ab924dc6d12c.png)
+
+![1136679f18b0453dfd48320bbb8a5e488ca2f9e99a88ebb0cc600ea60a7a86b0](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/1136679f18b0453dfd48320bbb8a5e488ca2f9e99a88ebb0cc600ea60a7a86b0.png)
 
 # Final BOM and submission prep
 
 Spent 3 hours finalizing the Week 1 BOM for submission. Compared vendors across DigiKey, Amazon, Adafruit, SparkFun, and Makerfabs to find the cheapest buyable parts. Moved ESP32 to Amazon ($9.99), found DIANN 2-pack DRV8833 ($4.99), and consolidated everything to a single Amazon cart ($57.43). Dropped the PTC fuse after confirming no cheap US source exists. Updated Half Life BOM to $65.43 total, within the Tier 2 margin. Uploaded cart screenshots and verified all repo checks pass.
-
-![img1](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/cc23596b5aa27d5dd152c554bec27da285db4b399fe71f25d713fea046c75a7b.png)
-
-![img2](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/bb9f406d546569d4ebfc1dee560f31356b2ed37ea20c91f07edf14b786d7bfed.png)
-
-![img3](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/mojxtmOCGXjRCKxlUsNf1hxDeCEkPhxc/28fa72dfdddce68ae86322b5dfee7148534dd5d0fd3f2e05b281083087703a20.png)
