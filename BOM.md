@@ -12,13 +12,6 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| Screw Terminal 5.08mm | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=KF301-2P+screw+terminal |
-| Screw Terminal 5.08mm | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=KF301-2P+screw+terminal |
-| PTC Fuse 2A | — | 1 | $0.00 | $0.00 | https://www.mouser.com/c/?q=MF-R200 |
-| Tactile Switch 6x6mm | — | 3 | $0.00 | $0.00 | https://www.amazon.com/s?k=6x6mm+tactile+switch |
-| Rocker Switch Terminal | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=rocker+switch+3A |
-| RGB LED 5mm CC | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=5mm+common+cathode+RGB+LED |
-| Resistor 150R | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=resistor+assortment+kit |
 | Resistor 100R | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=resistor+assortment+kit |
 | Resistor 33R | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=resistor+assortment+kit |
 | Resistor 10k | — | 3 | $0.00 | $0.00 | https://www.amazon.com/s?k=resistor+assortment+kit |
