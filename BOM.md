@@ -12,10 +12,6 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| DRV8833 Motor Driver | — | 1 | $0.00 | $0.00 | https://www.aliexpress.com/w/wholesale-DRV8833-motor-driver-module.html |
-| Expansion Header | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=2.54mm+breakaway+header |
-| Screw Terminal 5.08mm | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=KF301-2P+screw+terminal |
-| Screw Terminal 5.08mm | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=KF301-2P+screw+terminal |
 | Screw Terminal 5.08mm | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=KF301-2P+screw+terminal |
 | Screw Terminal 5.08mm | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=KF301-2P+screw+terminal |
 | PTC Fuse 2A | — | 1 | $0.00 | $0.00 | https://www.mouser.com/c/?q=MF-R200 |
