@@ -1,22 +1,22 @@
-Part,Designators,Qty,Value / Part #,Footprint,Source
-ESP32-S3-DevKitC-1-N16R8,U1,1,,CONN-TH_2X22PIN,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-DEVKITC-1-N16R8/15971100
-MAX98357A I2S Amp,J1,1,Generic MAX98357A module,HDR-M-2.54_1X7,https://www.aliexpress.com/w/wholesale-MAX98357A-amplifier-module.html
-VL53L0X ToF Sensor,J2,1,HiLetgo B07XXTMRR2,HDR-M-2.54_1X4,https://www.amazon.com/s?k=VL53L0X+breakout+sensor
-TFT LCD 1.69in ST7789 SPI,J3,1,Generic ST7789 1.69in module,HDR-M-2.54_1X8,https://www.aliexpress.com/w/wholesale-ST7789-1.69-SPI-display-module.html
-DRV8833 Motor Driver,J4,1,Generic DRV8833 module,HDR-M-2.54_2X10,https://www.aliexpress.com/w/wholesale-DRV8833-motor-driver-module.html
-Expansion Header,J5,1,,HDR-M-2.54_1X8,https://www.amazon.com/s?k=2.54mm+breakaway+header
-Screw Terminal 5.08mm,J6,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal
-Screw Terminal 5.08mm,J7,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal
-Screw Terminal 5.08mm,J8,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal
-Screw Terminal 5.08mm,J9,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal
-PTC Fuse 2A,F1,1,MF-R200,PTC-TH_7.7X3.6,https://www.mouser.com/c/?q=MF-R200
-Tactile Switch 6x6mm,SW1 SW2 SW3,3,,SW-TH_4P-L6.0-W6.0,https://www.amazon.com/s?k=6x6mm+tactile+switch
-Rocker Switch Terminal,SW4,1,,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=rocker+switch+3A
-RGB LED 5mm CC,D1,1,,LED-TH_4P-RGBLED_5MMRGB,https://www.amazon.com/s?k=5mm+common+cathode+RGB+LED
-Resistor 150R,R1,1,150 ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit
-Resistor 100R,R2,1,100 ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit
-Resistor 33R,R3,1,33 ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit
-Resistor 10k,R4 R5 R6,3,10k ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit
-Resistor 4.7k,R7 R8,2,4.7k ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit
-Capacitor 1000uF,C1 C2,2,1000uF 16V,ECAP-10MM-TH,https://www.amazon.com/s?k=1000uf+16v+capacitor
-Capacitor 0.1uF,C3 C4 C5 C6,4,0.1uF 50V,CAP-DISC-5MM,https://www.amazon.com/s?k=ceramic+capacitor+assortment
+Part,Designators,Qty,Value / Part #,Footprint,Source,Unit Cost,Line Total
+ESP32-S3-DevKitC-1-N16R8,U1,1,,CONN-TH_2X22PIN,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-DEVKITC-1-N16R8/15971100,13.30,13.30
+MAX98357A I2S Amp,J1,1,Generic MAX98357A module,HDR-M-2.54_1X7,https://www.aliexpress.com/w/wholesale-MAX98357A-amplifier-module.html,2.00,2.00
+VL53L0X ToF Sensor,J2,1,HiLetgo B07XXTMRR2,HDR-M-2.54_1X4,https://www.amazon.com/s?k=VL53L0X+breakout+sensor,6.79,6.79
+TFT LCD 1.69in ST7789 SPI,J3,1,Generic ST7789 1.69in module,HDR-M-2.54_1X8,https://www.aliexpress.com/w/wholesale-ST7789-1.69-SPI-display-module.html,5.50,5.50
+DRV8833 Motor Driver,J4,1,Generic DRV8833 module,HDR-M-2.54_2X10,https://www.aliexpress.com/w/wholesale-DRV8833-motor-driver-module.html,1.50,1.50
+Expansion Header,J5,1,,HDR-M-2.54_1X8,https://www.amazon.com/s?k=2.54mm+breakaway+header,0.10,0.10
+Screw Terminal 5.08mm,J6,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal,0.30,0.30
+Screw Terminal 5.08mm,J7,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal,0.30,0.30
+Screw Terminal 5.08mm,J8,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal,0.30,0.30
+Screw Terminal 5.08mm,J9,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=KF301-2P+screw+terminal,0.30,0.30
+PTC Fuse 2A,F1,1,MF-R200,PTC-TH_7.7X3.6,https://www.mouser.com/c/?q=MF-R200,0.60,0.60
+Tactile Switch 6x6mm,SW1 SW2 SW3,3,,SW-TH_4P-L6.0-W6.0,https://www.amazon.com/s?k=6x6mm+tactile+switch,0.10,0.30
+Rocker Switch Terminal,SW4,1,,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/s?k=rocker+switch+3A,1.20,1.20
+RGB LED 5mm CC,D1,1,,LED-TH_4P-RGBLED_5MMRGB,https://www.amazon.com/s?k=5mm+common+cathode+RGB+LED,0.30,0.30
+Resistor 150R,R1,1,150 ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit,0.02,0.02
+Resistor 100R,R2,1,100 ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit,0.02,0.02
+Resistor 33R,R3,1,33 ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit,0.02,0.02
+Resistor 10k,R4 R5 R6,3,10k ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit,0.02,0.06
+Resistor 4.7k,R7 R8,2,4.7k ohm,R_AXIAL-0.3,https://www.amazon.com/s?k=resistor+assortment+kit,0.02,0.04
+Capacitor 1000uF,C1 C2,2,1000uF 16V,ECAP-10MM-TH,https://www.amazon.com/s?k=1000uf+16v+capacitor,0.30,0.60
+Capacitor 0.1uF,C3 C4 C5 C6,4,0.1uF 50V,CAP-DISC-5MM,https://www.amazon.com/s?k=ceramic+capacitor+assortment,0.05,0.20
