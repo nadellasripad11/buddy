@@ -1,32 +1,32 @@
 # firmware
 
-Arduino firmware for the ESP32-S3-DevKitC-1-N16R8.
+arduino firmware for the esp32-s3-devkitc-1-n16r8.
 
 ## buddy.ino
 
-Bring-up firmware using the verified pin map from `docs/week1/04-pin-map.md`:
+bring-up firmware using the verified pin map from `docs/week1/04-pin-map.md`:
 
-- **Display**: ST7789 240x320 SPI (GPIO9-14)
-- **Audio**: MAX98357A I2S amp (GPIO4-6)
-- **ToF**: VL53L0X distance sensor (GPIO7-8 I2C)
-- **Motors**: DRV8833 dual H-bridge (GPIO15-18 PWM)
-- **Buttons**: 3x tactile, active-low (GPIO1/2/21)
-- **RGB LED**: common-cathode (GPIO38/47/48)
+- display — st7789 240x320 spi (gpio9-14)
+- audio — max98357a i2s amp (gpio4-6)
+- tof — vl53l0x distance sensor (gpio7-8 i2c)
+- motors — drv8833 dual h-bridge (gpio15-18 pwm)
+- buttons — 3x tactile, active-low (gpio1/2/21)
+- rgb led — common-cathode (gpio38/47/48)
 
-Button 1 = forward, Button 2 = reverse, Button 3 = stop.
-RGB shows status: red = booting, green = ready/idle.
+button 1 is forward, button 2 is reverse, button 3 is stop.
+the rgb led shows status: red while booting, green when ready or idle.
 
-## required libraries
+## libraries you need
 
-Install via Arduino Library Manager:
+install these through the arduino library manager:
 
-- Adafruit GFX Library
-- Adafruit ST7789 Library
-- VL53L0X by Pololu
+- adafruit gfx library
+- adafruit st7789 library
+- vl53l0x by pololu
 
 ## board setup
 
-- Board: "ESP32S3 Dev Module"
-- USB CDC On Boot: Enabled (for Serial Monitor)
-- Flash Size: 16MB
-- PSRAM: OPI PSRAM
+- board: "esp32s3 dev module"
+- usb cdc on boot: enabled (so the serial monitor works)
+- flash size: 16mb
+- psram: opi psram

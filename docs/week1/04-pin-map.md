@@ -28,8 +28,8 @@ below is every GPIO broken out, with the J-header position and any fixed functio
 | J1-10 | GPIO17 | RTC, ADC2_CH6, U1TXD |
 | J1-11 | GPIO18 | RTC, ADC2_CH7, U1RXD |
 | J1-12 | GPIO8 | RTC, TOUCH8, ADC1_CH7 |
-| J1-13 | GPIO3 | ⚠️ strapping pin — JTAG source select |
-| J1-14 | GPIO46 | ⚠️ strapping pin — input only at boot |
+| J1-13 | GPIO3 | warn: strapping pin — JTAG source select |
+| J1-14 | GPIO46 | warn: strapping pin — input only at boot |
 | J1-15 | GPIO9 | TOUCH9, ADC1_CH8, FSPIHD |
 | J1-16 | GPIO10 | TOUCH10, ADC1_CH9, FSPICS0 |
 | J1-17 | GPIO11 | TOUCH11, ADC2_CH0, FSPID |
@@ -56,11 +56,11 @@ below is every GPIO broken out, with the J-header position and any fixed functio
 | J3-11 | GPIO37 | 🚫 **N16R8: octal PSRAM — DO NOT USE** |
 | J3-12 | GPIO36 | 🚫 **N16R8: octal PSRAM — DO NOT USE** |
 | J3-13 | GPIO35 | 🚫 **N16R8: octal PSRAM — DO NOT USE** |
-| J3-14 | GPIO0 | ⚠️ strapping pin — boot mode |
-| J3-15 | GPIO45 | ⚠️ strapping pin — VDD_SPI voltage |
+| J3-14 | GPIO0 | warn: strapping pin — boot mode |
+| J3-15 | GPIO45 | warn: strapping pin — VDD_SPI voltage |
 | J3-16 | GPIO48 | SPICLK_N_DIFF |
 | J3-17 | GPIO47 | SPICLK_P_DIFF |
-| J3-18 | GPIO21 | ⚠️ reported Wi-Fi sensitivity in output mode; fine as input |
+| J3-18 | GPIO21 | warn: reported Wi-Fi sensitivity in output mode; fine as input |
 | J3-19 | GPIO20 | 🔒 USB D+ — keep free for programming |
 | J3-20 | GPIO19 | 🔒 USB D- — keep free for programming |
 | J3-21 | GND | ground |
@@ -173,17 +173,17 @@ without a board redesign.
 
 | check | result |
 |---|---|
-| SPI2 pins (GPIO9–14) clash with any other peripheral? | ✅ no — all clean, dedicated to display |
-| I²S pins (GPIO4–6) clash? | ✅ no — plain GPIO, no overlap |
-| I²C pins (GPIO7–8) clash? | ✅ no — plain GPIO |
-| Motor PWM (GPIO15–18) clash? | ✅ no — plain GPIO, all LEDC-capable |
-| Button GPIO1–2 clash with ADC? | ✅ no — not using ADC; INPUT_PULLUP mode |
-| GPIO21 Wi-Fi note (button 3)? | ✅ safe as INPUT_PULLUP; issue is output-drive mode only |
-| Any pin used twice? | ✅ no — verified: 21 unique GPIOs, no duplicates |
-| USB kept free? | ✅ GPIO19, 20 untouched |
-| UART kept free? | ✅ GPIO43, 44 untouched |
-| N16R8 PSRAM pins avoided? | ✅ GPIO35, 36, 37 assigned to nothing |
-| Strapping pins avoided as primary outputs? | ✅ none of GPIO0/3/45/46 used as peripheral outputs |
+| SPI2 pins (GPIO9–14) clash with any other peripheral? | ok no — all clean, dedicated to display |
+| I²S pins (GPIO4–6) clash? | ok no — plain GPIO, no overlap |
+| I²C pins (GPIO7–8) clash? | ok no — plain GPIO |
+| Motor PWM (GPIO15–18) clash? | ok no — plain GPIO, all LEDC-capable |
+| Button GPIO1–2 clash with ADC? | ok no — not using ADC; INPUT_PULLUP mode |
+| GPIO21 Wi-Fi note (button 3)? | ok safe as INPUT_PULLUP; issue is output-drive mode only |
+| Any pin used twice? | ok no — verified: 21 unique GPIOs, no duplicates |
+| USB kept free? | ok GPIO19, 20 untouched |
+| UART kept free? | ok GPIO43, 44 untouched |
+| N16R8 PSRAM pins avoided? | ok GPIO35, 36, 37 assigned to nothing |
+| Strapping pins avoided as primary outputs? | ok none of GPIO0/3/45/46 used as peripheral outputs |
 
 **result: no conflicts found.**
 
@@ -239,50 +239,50 @@ official SPI2 (FSPI) hardware default pin mapping from ESP-IDF v5.3:
 
 | SPI2 signal | GPIO | our assignment | match? |
 |---|---|---|---|
-| FSPICLK (SCK) | GPIO12 | display SCK | ✅ exact |
-| FSPID (MOSI) | GPIO11 | display MOSI | ✅ exact |
-| FSPICS0 (CS) | GPIO10 | display CS | ✅ exact |
-| FSPIQ (DC) | GPIO13 | display DC | ✅ exact |
-| FSPIHD (RST) | GPIO9 | display RST | ✅ exact |
-| FSPIWP (BLK) | GPIO14 | display BLK | ✅ exact |
+| FSPICLK (SCK) | GPIO12 | display SCK | ok exact |
+| FSPID (MOSI) | GPIO11 | display MOSI | ok exact |
+| FSPICS0 (CS) | GPIO10 | display CS | ok exact |
+| FSPIQ (DC) | GPIO13 | display DC | ok exact |
+| FSPIHD (RST) | GPIO9 | display RST | ok exact |
+| FSPIWP (BLK) | GPIO14 | display BLK | ok exact |
 
 all 6 display pins hit the SPI2 hardware defaults — IO_MUX path, no GPIO matrix routing needed.
 this is the best possible signal integrity for the ST7789.
 
 ### I²S audio (GPIO4–6)
 I²S0 routes entirely via GPIO matrix on the ESP32-S3 — any GPIO works.
-GPIO4/5/6 are confirmed on J1, clean, no competing functions.  ✅
+GPIO4/5/6 are confirmed on J1, clean, no competing functions.  ok
 
 ### I²C sensor (GPIO7–8)
 I²C0 routes entirely via GPIO matrix — any GPIO works.
-GPIO7/8 are confirmed on J1, clean.  ✅
+GPIO7/8 are confirmed on J1, clean.  ok
 
 ### motor PWM (GPIO15–18)
 LEDC timer routes via GPIO matrix — any GPIO works.
-GPIO15–18 are on J1, all clean, no competing functions.  ✅
+GPIO15–18 are on J1, all clean, no competing functions.  ok
 
 ### RGB LED (GPIO38/47/48)
 all three are pure GPIO, no competing peripherals.
 GPIO38 is on J3 (confirmed). GPIO47/48 (SPICLK_P/N_DIFF) are only a concern if
-using differential SPDIF — we are not. they operate as normal GPIO. ✅
+using differential SPDIF — we are not. they operate as normal GPIO. ok
 
 ### buttons (GPIO1/2/21)
 GPIO1/2 on J3: clean, no competing functions.
-GPIO21 on J3: safe as INPUT_PULLUP — Wi-Fi sensitivity concern applies to output-driving only. ✅
+GPIO21 on J3: safe as INPUT_PULLUP — Wi-Fi sensitivity concern applies to output-driving only. ok
 
 ### strapping pins
-none of GPIO0/3/45/46 are used as peripheral outputs in this design. ✅
+none of GPIO0/3/45/46 are used as peripheral outputs in this design. ok
 
 ### N16R8 PSRAM trap
 GPIO35/36/37 appear on J3 but are consumed by the octal PSRAM on the N16R8 module.
 confirmed from official docs: "not available for external use on N16R8."
-none are assigned. ✅
+none are assigned. ok
 
 ### USB + UART
-GPIO19/20 (USB D-/D+) and GPIO43/44 (UART0 TX/RX) are untouched. ✅
+GPIO19/20 (USB D-/D+) and GPIO43/44 (UART0 TX/RX) are untouched. ok
 
 ### JTAG expansion
-GPIO39/40/41/42 reserved as JTAG-capable expansion header. usable as GPIO if debugger not needed. ✅
+GPIO39/40/41/42 reserved as JTAG-capable expansion header. usable as GPIO if debugger not needed. ok
 
 ---
 
