@@ -19,9 +19,8 @@
 | [1000uF 16V Capacitor 10-pack](https://www.amazon.com/dp/B0C1VBXCQM) | bulk capacitors for the motor power rail | 1 | $6.49 | $6.49 | [https://www.amazon.com/dp/B0C1VBXCQM](https://www.amazon.com/dp/B0C1VBXCQM) |
 | [Screw Terminal 10-pack](https://www.amazon.com/dp/B0FPCJRJTY) | power input and motor output wire connections | 1 | $6.99 | $6.99 | [Amazon](https://www.amazon.com/dp/B0FPCJRJTY) |
 | [Rocker Switch 5-pack](https://www.amazon.com/dp/B07GNHMY3B) | main power on/off switch | 1 | $4.99 | $4.99 | [https://www.amazon.com/dp/B07GNHMY3B](https://www.amazon.com/dp/B07GNHMY3B) |
-| [PTC Fuse 2A](https://www.digikey.com/en/products/detail/littelfuse-inc/LVR200K-240/6348192) | resettable overcurrent protection on power input | 1 | $2.45 | $2.45 | [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/LVR200K-240/6348192) |
-| **Parts subtotal** | — | — | — | **$61.88** | — |
+| **Parts subtotal** | — | — | — | **$59.43** | — |
 | **Tax & shipping** | — | — | — | **$8.00** | — |
-| **Total** | — | — | — | **$69.88** | — |
+| **Total** | — | — | — | **$67.43** | — |
 
-**$4.88 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
+**$2.43 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
