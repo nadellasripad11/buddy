@@ -12,9 +12,6 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| MAX98357A I2S Amp | — | 1 | $0.00 | $0.00 | https://www.aliexpress.com/w/wholesale-MAX98357A-amplifier-module.html |
-| VL53L0X ToF Sensor | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=VL53L0X+breakout+sensor |
-| TFT LCD 1.69in ST7789 SPI | — | 1 | $0.00 | $0.00 | https://www.aliexpress.com/w/wholesale-ST7789-1.69-SPI-display-module.html |
 | DRV8833 Motor Driver | — | 1 | $0.00 | $0.00 | https://www.aliexpress.com/w/wholesale-DRV8833-motor-driver-module.html |
 | Expansion Header | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=2.54mm+breakaway+header |
 | Screw Terminal 5.08mm | — | 1 | $0.00 | $0.00 | https://www.amazon.com/s?k=KF301-2P+screw+terminal |
