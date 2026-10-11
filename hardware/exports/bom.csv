@@ -1,22 +1,22 @@
 Part,Designators,Qty,Value / Part #,Footprint,Source,Unit Cost,Line Total
-ESP32-S3-DevKitC-1-N16R8,U1,1,genuine single,CONN-TH_2X22PIN,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-DEVKITC-1-N16R8/15971100,14.21,14.21
-MAX98357A I2S Amp,J1,1,generic 2-pack $6.88,HDR-M-2.54_1X7,https://www.amazon.com/dp/B0DPJRLMDJ,3.44,3.44
-VL53L0X ToF Sensor,J2,1,generic 2-pack $6.99,HDR-M-2.54_1X4,https://www.amazon.com/dp/B0DGL2P6XC,3.50,3.50
-TFT LCD 1.69in ST7789 SPI,J3,1,1.69in IPS 240x280,HDR-M-2.54_1X8,https://www.amazon.com/dp/B0DQ4R95TZ,7.99,7.99
-DRV8833 Motor Driver,J4,1,generic 6-pack $7.99,HDR-M-2.54_2X10,https://www.amazon.com/dp/B0DB8CX8LK,1.33,1.33
-Expansion Header,J5,1,2.54mm from 20pc $6.29,HDR-M-2.54_1X8,https://www.amazon.com/dp/B0FRZW75VS,0.31,0.31
-Screw Terminal 5.08mm,J6,1,KF301-2P from 10pk $4.83,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/dp/B0H71MMBP1,0.48,0.48
-Screw Terminal 5.08mm,J7,1,KF301-2P from 10pk $4.83,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/dp/B0H71MMBP1,0.48,0.48
-Screw Terminal 5.08mm,J8,1,KF301-2P from 10pk $4.83,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/dp/B0H71MMBP1,0.48,0.48
-Screw Terminal 5.08mm,J9,1,KF301-2P from 10pk $4.83,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/dp/B0H71MMBP1,0.48,0.48
-PTC Fuse 2A,F1,1,from 55pc kit $9.99,PTC-TH_7.7X3.6,https://www.amazon.com/dp/B0D8SCV9YM,0.30,0.30
-Tactile Switch 6x6mm,SW1 SW2 SW3,3,from 250pc kit $8.49,SW-TH_4P-L6.0-W6.0,https://www.amazon.com/dp/B0FLGZB3VP,0.10,0.30
-Rocker Switch Terminal,SW4,1,KCD1 3A from 5pk $6.99,CONN-TH_2P-P5.0_KF301-2P,https://www.amazon.com/dp/B0CNJX5QF8,1.40,1.40
-RGB LED 5mm CC,D1,1,from 100pc $8.99,LED-TH_4P-RGBLED_5MMRGB,https://www.amazon.com/dp/B077XGF3YR,0.10,0.10
-Resistor 150R,R1,1,from 1000pc kit $6.39,R_AXIAL-0.3,https://www.amazon.com/dp/B0F4P352BB,0.02,0.02
-Resistor 100R,R2,1,from 1000pc kit $6.39,R_AXIAL-0.3,https://www.amazon.com/dp/B0F4P352BB,0.02,0.02
-Resistor 33R,R3,1,from 1000pc kit $6.39,R_AXIAL-0.3,https://www.amazon.com/dp/B0F4P352BB,0.02,0.02
-Resistor 10k,R4 R5 R6,3,from 1000pc kit $6.39,R_AXIAL-0.3,https://www.amazon.com/dp/B0F4P352BB,0.02,0.06
-Resistor 4.7k,R7 R8,2,from 1000pc kit $6.39,R_AXIAL-0.3,https://www.amazon.com/dp/B0F4P352BB,0.02,0.04
-Capacitor 1000uF,C1 C2,2,from 24val kit $9.99,ECAP-10MM-TH,https://www.amazon.com/dp/B0C1VBXCQM,0.30,0.60
-Capacitor 0.1uF,C3 C4 C5 C6,4,from 500pc kit $8.99,CAP-DISC-5MM,https://www.amazon.com/dp/B0GR57TNSY,0.05,0.20
+ESP32-S3-DevKitC-1-N16R8,U1,1,16MB flash 8MB PSRAM,CONN-TH_2X22PIN,https://www.aliexpress.com/w/wholesale-ESP32-S3-DevKitC-1-N16R8.html,8.00,8.00
+MAX98357A I2S Amp,J1,1,generic module,HDR-M-2.54_1X7,https://www.aliexpress.com/w/wholesale-MAX98357A-amplifier-module.html,2.00,2.00
+VL53L0X ToF Sensor,J2,1,GY-VL53L0XV2,HDR-M-2.54_1X4,https://www.aliexpress.com/w/wholesale-VL53L0X-module.html,4.00,4.00
+TFT LCD 1.69in ST7789 SPI,J3,1,1.69in IPS 240x280,HDR-M-2.54_1X8,https://www.aliexpress.com/w/wholesale-ST7789-1.69-SPI-display-module.html,5.50,5.50
+DRV8833 Motor Driver,J4,1,generic module,HDR-M-2.54_2X10,https://www.aliexpress.com/w/wholesale-DRV8833-motor-driver-module.html,1.50,1.50
+Expansion Header,J5,1,2.54mm breakaway,HDR-M-2.54_1X8,https://www.aliexpress.com/w/wholesale-2.54mm-male-pin-header.html,0.20,0.20
+Screw Terminal 5.08mm,J6,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.aliexpress.com/w/wholesale-KF301-2P-screw-terminal.html,0.30,0.30
+Screw Terminal 5.08mm,J7,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.aliexpress.com/w/wholesale-KF301-2P-screw-terminal.html,0.30,0.30
+Screw Terminal 5.08mm,J8,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.aliexpress.com/w/wholesale-KF301-2P-screw-terminal.html,0.30,0.30
+Screw Terminal 5.08mm,J9,1,KF301-2P,CONN-TH_2P-P5.0_KF301-2P,https://www.aliexpress.com/w/wholesale-KF301-2P-screw-terminal.html,0.30,0.30
+PTC Fuse 2A,F1,1,resettable radial,PTC-TH_7.7X3.6,https://www.aliexpress.com/w/wholesale-PTC-resettable-fuse-2A.html,0.30,0.30
+Tactile Switch 6x6mm,SW1 SW2 SW3,3,,SW-TH_4P-L6.0-W6.0,https://www.aliexpress.com/w/wholesale-6x6mm-tactile-switch.html,0.10,0.30
+Rocker Switch Terminal,SW4,1,SPST 3A,CONN-TH_2P-P5.0_KF301-2P,https://www.aliexpress.com/w/wholesale-rocker-switch-3A.html,0.80,0.80
+RGB LED 5mm CC,D1,1,common cathode,LED-TH_4P-RGBLED_5MMRGB,https://www.aliexpress.com/w/wholesale-5mm-RGB-LED-common-cathode.html,0.15,0.15
+Resistor 150R,R1,1,150 ohm 1/4W,R_AXIAL-0.3,https://www.aliexpress.com/w/wholesale-resistor-kit-1-4w.html,0.02,0.02
+Resistor 100R,R2,1,100 ohm 1/4W,R_AXIAL-0.3,https://www.aliexpress.com/w/wholesale-resistor-kit-1-4w.html,0.02,0.02
+Resistor 33R,R3,1,33 ohm 1/4W,R_AXIAL-0.3,https://www.aliexpress.com/w/wholesale-resistor-kit-1-4w.html,0.02,0.02
+Resistor 10k,R4 R5 R6,3,10k ohm 1/4W,R_AXIAL-0.3,https://www.aliexpress.com/w/wholesale-resistor-kit-1-4w.html,0.02,0.06
+Resistor 4.7k,R7 R8,2,4.7k ohm 1/4W,R_AXIAL-0.3,https://www.aliexpress.com/w/wholesale-resistor-kit-1-4w.html,0.02,0.04
+Capacitor 1000uF,C1 C2,2,1000uF 16V,ECAP-10MM-TH,https://www.aliexpress.com/w/wholesale-1000uF-16V-capacitor.html,0.25,0.50
+Capacitor 0.1uF,C3 C4 C5 C6,4,0.1uF 50V,CAP-DISC-5MM,https://www.aliexpress.com/w/wholesale-0.1uF-ceramic-capacitor.html,0.03,0.12
