@@ -6,7 +6,7 @@
 > [!NOTE]
 > This devlog is mirrored from [Half Life](https://halflife.hackclub.com). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> buddy is a small interactive desk companion that i’m building to eventually become a robot that can move around, listen to me, talk back, and react to me. for the first stage, i’m designing the pcb that will connect the main electronics and make the rest of the project easier to build later.
+> buddy is a small interactive desk companion that i’m building to eventually become a robot that can move around, listen to me, talk back, and react to me.
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
