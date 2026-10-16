@@ -2,6 +2,8 @@
 
 arduino firmware for the esp32-s3-devkitc-1-n16r8.
 
+> not tested on real hardware yet — bring-up code written from the pin map. needs a first flash and check before trusting it.
+
 ## buddy.ino
 
 bring-up firmware using the verified pin map from `docs/week1/04-pin-map.md`:
