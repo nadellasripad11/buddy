@@ -44,9 +44,11 @@ i'm still in the early stages, and the robot itself isn't finished yet.
 
 the schematic has been designed, but the pcb hasn't been routed or ordered yet. i'm working on the chassis next, followed by the electronics and firmware.
 
-the image below shows the look i'm going for. it's concept art, not a picture of a finished robot.
+here's the actual chassis cad from week 2, designed in onshape — base, face frame, and top shell:
 
-![buddy concept art](media/reference/reel-storyboard.webp)
+![buddy chassis assembly, week 2 onshape cad](https://raw.githubusercontent.com/nadellasripad11/Buddy-Chassis-/main/images/renders/view-1-assembly-iso.png)
+
+![buddy chassis base, week 2 onshape cad](https://raw.githubusercontent.com/nadellasripad11/Buddy-Chassis-/main/images/renders/view-2-base-top.png)
 
 ## bill of materials (week 1)
 
@@ -70,6 +72,10 @@ the full bill of materials, including component names and footprints, is in [`ha
 ## how it works
 
 the esp32-s3 is the main controller. it connects to the display, motor driver, and sensors, and will eventually handle audio input and output too.
+
+here's the actual week 1 schematic as designed in easyeda:
+
+![buddy week 1 schematic in easyeda](media/week1-schematic.jpg)
 
 the basic plan is:
 
