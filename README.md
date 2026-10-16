@@ -58,12 +58,12 @@ here are the main parts in my first hardware plan, along with the prices i used 
 |---|---|---:|---:|---:|
 | [esp32-s3-devkitc-1-n16r8](https://www.amazon.com/dp/B0FPLVCTQD) | main controller for the robot | 1 | $9.99 | $9.99 |
 | [1.47-inch st7789 spi tft lcd](https://www.amazon.com/dp/B0F4DX2N4J) | display for buddy's face | 1 | $8.99 | $8.99 |
-| [drv8833 motor driver](https://a.co/d/0eZ6dFTn) | controls the two dc motors | 1 | $4.99 | $4.99 |
+| [drv8833 motor driver](https://a.co/d/07tefupE) | controls the two dc motors | 1 | $5.99 | $5.99 |
 | [elegoo electronics kit](https://www.amazon.com/dp/B01ERP6WL4) | resistors, capacitors, rgb led, buttons, and headers | 1 | $9.99 | $9.99 |
 | [capacitor assortment kit](https://www.amazon.com/dp/B0C1VBXCQM) | capacitors for the motor power rail | 1 | $9.99 | $9.99 |
 | [screw terminal 10-pack](https://www.amazon.com/dp/B0FPCJRJTY) | connections for power and motor wires | 1 | $6.99 | $6.99 |
 | [rocker switch 5-pack](https://www.amazon.com/dp/B07GNHMY3B) | main power switch | 1 | $6.49 | $6.49 |
-| **parts subtotal** | | | | **$57.43** |
+| **parts subtotal** | | | | **$58.43** |
 
 this is the total for the listed week 1 parts, not the final cost of a complete buddy. i'll probably need additional components and other parts as the build moves forward.
 
