@@ -2,8 +2,8 @@ Item,Qty,Supplier,Cost/item,Total Cost,link
 ESP32-S3-DevKitC-1-N16R8,1,Amazon,$9.99,$9.99,https://www.amazon.com/dp/B0FPLVCTQD
 TFT LCD 1.47in ST7789 SPI,1,Amazon,$8.99,$8.99,https://www.amazon.com/dp/B0F4DX2N4J
 DRV8833 Motor Driver,1,Amazon,$5.99,$5.99,https://a.co/d/07tefupE
-ELEGOO Electronics Kit,1,Amazon,$9.99,$9.99,https://www.amazon.com/dp/B01ERP6WL4
-"Capacitor Assortment Kit (24 values, incl 1000uF 16V)",1,Amazon,$9.99,$9.99,https://www.amazon.com/dp/B0C1VBXCQM
+ELEGOO Electronics Kit,1,https://www.amazon.com/dp/B01ERP6WL4,$9.99,$9.99,https://www.amazon.com/dp/B01ERP6WL4
+"Capacitor Assortment Kit (24 values, incl 1000uF 16V)",1,https://www.amazon.com/dp/B0C1VBXCQM,$9.99,$9.99,https://www.amazon.com/dp/B0C1VBXCQM
 Screw Terminal 10-pack,1,Amazon,$6.99,$6.99,https://www.amazon.com/dp/B0FPCJRJTY
-Rocker Switch 5-pack,1,Amazon,$6.49,$6.49,https://www.amazon.com/dp/B07GNHMY3B
+Rocker Switch 5-pack,1,https://www.amazon.com/dp/B07GNHMY3B,$6.49,$6.49,https://www.amazon.com/dp/B07GNHMY3B
 Estimated total shipping,1,,,$8.00,
